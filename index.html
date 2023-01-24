@@ -19,31 +19,51 @@
 </head>
 
 <body>
-	
-	<h1>Calcola il prezzo del tuo biglietto</h1>
-	
-	<form>
-		<label>Nome e Cognome:</label><br>
-		<input type="text" id="name"><br>
-		
-		<label>Km da percorrere:</label><br>
-		<input type="number" id="km"><br>
-		
-		<label>Fascia d'età:</label>
-		<select id="anni">
-			<option value="Maggiorenne">Maggiorenne</option>
-			<option value="Minorenne">Minorenne</option>
-			<option value="Anziano">Più di 65 anni</option>
-		</select>
-		
-		<button type="button" id="BtnGenera">Genera</button>
-		<button type="reset">Annulla</button>
-	</form> 
-	
-	<h2 id="h2"></h2>
+	<main>
 
-	<!-- SCRIPT -->
-	<script type="text/javascript" src="./script.js"></script>
+		<h1 class="text-center mt-4">Calcola il prezzo del tuo biglietto</h1>
+		
+		<div class="container mt-4">
+
+			<form class="row justify-content-between align-items-center p-5">
+				
+
+					<div class="col-4 text-center">
+						<label>Nome e Cognome:</label><br>
+					<input type="text" id="name"><br>
+					</div>
+				
+					<div class="col-4 text-center">
+						<label>Km da percorrere:</label><br>
+						<input type="number" id="km"><br>
+					</div>
+					
+					<div class="col-4 text-center">
+						<label>Fascia d'età:</label>
+						<select id="anni">
+							<option value="Maggiorenne">Maggiorenne</option>
+							<option value="Minorenne">Minorenne</option>
+							<option value="Anziano">Più di 65 anni</option>
+						</select>
+					</div>
+			
+					<div class="col-1 mt-5">
+						<button type="button" id="BtnGenera">Genera</button>
+					</div>
+	
+					<div class="col-1 mt-5">
+						<button type="reset">Annulla</button>
+					</div>
+
+			</form> 
+			
+			<h2 id="h2" class="text-center mt-5"></h2>
+		</div>
+			
+	</main>
+		
+		<!-- SCRIPT -->
+		<script type="text/javascript" src="./script.js"></script>
 </body>
-
+	
 </html>

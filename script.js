@@ -39,7 +39,7 @@ Genera.addEventListener(
         Prezzo = Prezzo.toFixed(2);
 
         //output
-        document.getElementById('h2').innerHTML= `Il prezzo totale per il tuo viaggio è di ${Prezzo} euro`;
+        document.getElementById('h2').innerHTML= `Costo biglietto: ${Prezzo} euro`;
 
     }
 )

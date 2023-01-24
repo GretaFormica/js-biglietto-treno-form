@@ -1,0 +1,14 @@
+body{
+    background-color: #b91450;
+    color: white;
+}
+
+.row{
+    background-color: white;
+    border-radius: 20px;
+    color: #b91450;
+}
+
+input{
+    border: 2px solid #b91450;
+}

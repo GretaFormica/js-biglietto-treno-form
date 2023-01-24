@@ -1,22 +1,30 @@
-// dichiarazione costanti e variabili
-const Km = parseInt(prompt('Quanti kilometri devi percorrere?'));
-const Anni = parseInt(prompt('Quanti anni hai?'));
+//dichiarazioni costanti e variabili
+const UserName = document.getElementById('name').value;
+const Km = parseInt(document.getElementById('km').value);
+const Anni = documenti.getElementById('anni').value;
 const PrezzoBase = Km * 0.21;
 let Prezzo
 
 //istruzioni condizionali
-if(Anni < 18){
 
-    Prezzo = (PrezzoBase * 20 / 100);
+if(!isNaN(Km)){
 
-} else if(Anni > 65){
+    if(Anni == "Minorenne"){
+
+        Prezzo = (PrezzoBase * 20 / 100);
     
-    Prezzo = (PrezzoBase * 40 / 100);
+    } else if(Anni == "Anziano"){
+        
+        Prezzo = (PrezzoBase * 40 / 100);
+    
+    } else {
+    
+        Prezzo = PrezzoBase;
+    
+    }
 
-} else {
-
-    Prezzo = PrezzoBase;
-
+} else{
+    alert('valore dei km non valido: inserire un numero')
 }
 
 //arrotondamento
@@ -25,4 +33,4 @@ console.log(Prezzo);
 
 //output
 
-document.getElementById('h1').innerHTML= `Il prezzo totale per il tuo viaggio è di ${Prezzo} euro`;
+//document.getElementById('h1').innerHTML= `Il prezzo totale per il tuo viaggio è di ${Prezzo} euro`;
